@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="We are a group of enthusiastic individuals dedicated towards building a safe environment for upcoming pre-IB students. We’ve organized the LEAP (Leaders Engaged: Achieving Potential) conference for both mentors and delegates to build connections, share advice and learn. The theme for this year’s conference is space.">
+
+    <title>LEAP | Leaders Engaged: Achieving Potential </title>
+    <link rel="icon" type="image/png" href="images/icon.png" />
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
+    <link href="css/new-age.css" rel="stylesheet">
+
+
+  </head>
+  
+
+  <body id="page-top">
+ 
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a href="#page-top" class="navbar-brand"><img width="20%" height="20%" src="images/leap.png"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header id="computerlanding" class="masthead">
+      <div class="container h-100">
+        <div class="row h-100">
+          
+          <div id="earth-background" class=" col-xs-2 col-sm-2 col-lg-12 ">
+            <div class="header-content mx-auto">
+
+              <div class ="timertext row">
+
+                <p class="col-xs-1 col-lg-2 scaledown extra"> </p>
+
+                <div class="col-xs-1 col-lg-2 scaledown ">
+                  
+                  <p id="finish"></p>
+
+                    <script>
+                    var finaldate = new Date("Sep 19, 2018 08:30:00").getTime();
+
+                    var update = setInterval(function() {
+
+                        var now = new Date().getTime();
+                        
+                        var timeleft = finaldate - now;
+                        
+                        var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+                        
+                        document.getElementById("finish").innerHTML = days + ":" + hours + ":"
+                        + minutes + ":" + seconds;
+                        
+                        if (timeleft < 0) {
+                            clearInterval(update);
+                            document.getElementById("finish").innerHTML = "WELCOME TO THE FUTURE";
+                        }
+                    }, 1000);
+                    </script>
+
+          <div class="col-lg-5 my-auto">
+            <div class="device-container">
+            </div>
+          </div> 
+        </div>
+      </div>
+    </header>
+
+
+    <section class="download bg-primary text-center container-fluid" id="about">
+      <div class="container">
+        <div class="row" >
+          <div class="col-md-8 mx-auto fadescroll ">
+            <h2 class="section-heading hideme">About Us</h2> 
+            <p class="hideme">We are a group of enthusiastic individuals dedicated towards building a safe environment for upcoming pre-IB students. We’ve organized the LEAP (Leaders Engaged: Achieving Potential) conference for both mentors and delegates to build connections, share advice and learn. The theme for this year’s conference is space.</p>
+            <p class="hideme">LEAP is September 12, 2017. Registration begins at 7:45 AM.</p>
+            <h3 class="hideme"> Attending? Bring this waiver  <a id="waiver" class="btn hideme" href="https://drive.google.com/file/d/0BwgaynuJMjcJZ0E5MFdrWjNuQ0k/view?usp=sharing" target="_blank">Click Here</a> </h3>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cta-content">
+        <div class="container">
+          <img class="grow" src="images/space.png" alt="Digital Art by Creative and Marketing Directors">
+        </div>
+      </div>
+      <div class="overlay"></div>
+
+
+    </section>
+
+    <section class="features" id="team">
+      <div class="container">
+        <div class="section-heading text-center">
+          <h2>Meet the Team. </h2>
+          <p class="text-muted">We like rockets!</p>
+          <hr>
+        </div>
+        <div class="row people fadescroll">
+          <div class="col-md-3 hideme">
+            <img src="images/jane.jpg" alt="Jane" class=" grow img-responsive">
+            <h3>Jane Le </h3>
+            <p>Chair</p>
+          </div>
+          <div class="col-md-3 hideme">
+            <img src="images/Dasni.png"  alt="Dasni" class=" grow img-responsive">
+            <h3>Dasni Samarasena </h3>
+            <p>Chair</p>
+          </div>
+          <div class="col-md-3 hideme">
+            <img src="images/nabil.png" alt="Nabella" class=" grow img-responsive">
+            <h3>Nabil Shahad</h3>
+            <p>Director of Technology</p> 
+          </div>
+          <div class="col-md-3 hideme">
+            <img src="images/nikisha.jpeg" alt="Nikisha" class=" grow img-responsive">
+            <h3>Nikisha Trivedi</h3>
+            <p>Director of Technology</p>
+          </div>
+          <div class="col-md-3 hideme">
+            <img src="images/Prannoy.jpg" alt="Prannoy" class=" grow img-responsive">
+            <h3>Prannoy Lal</h3>
+            <p>Minister of Leadership Development</p>
+          </div>
+          <div class="col-md-3 hideme">
+            <img src="images/Gurleen.jpg" alt="Gurleen" class=" grow img-responsive">
+            <h3>Gurleen Cheema</h3>
+            <p>Minister of Leadership Development</p>
+          </div>
+          <div class="col-md-3 hideme">
+            <img src="images/Isabelle.jpeg" alt="Isabelle" class=" grow img-responsive">
+            <h3>Isabelle Choon-Kon-Yune</h3>
+            <p>Minister of Leadership Development</p>
+          </div>
+          <div class="col-md-3 hideme">
+            <img src="images/Neha.jpg" alt="Neha" class=" grow img-responsive">
+            <h3>Neha Kamath</h3>
+            <p>Creative and Marketing Director</p>
+          </div>
+          <div class="col-md-3 hideme">
+            <img src="images/Janani.jpeg" alt="Janani" class=" grow img-responsive">
+            <h3>Janani Rajan</h3>
+            <p>Creative and Marketing Director</p>
+          </div>
+          <div class="col-md-3 hideme">
+            <img src="images/Kevin.jpg" alt="Kevin" class=" grow img-responsive">
+            <h3>Kevin Singh</h3>
+            <p>Director of Conference Committee</p>
+          </div>
+          <div class="col-md-3 hideme">
+            <img src="images/Ayesha.jpg" alt="Ayesha" class=" grow img-responsive">
+            <h3>Ayesha Shakeel</h3>
+            <p>Director of Conference Committee</p>
+          </div>
+          <div class="col-md-3 hideme">
+            <img src="images/ShriVarsha.jpg" alt="Shri Varshaa" class=" grow img-responsive">
+            <h3>Shri Varshaa Ranjson</h3>
+            <p>Director of Conference Committee</p>
+          </div>
+          <div class="col-md-3 hideme">
+            <img src="images/Nehal.jpg" alt="Nehal" class=" grow img-responsive">
+            <h3>Nehal Lubana</h3>
+            <p>Junior Director of Technology</p>
+          </div>
+          <div class="col-md-3 hideme">
+            <img src="images/Nishchay.jpg" alt="Nishchay" class=" grow img-responsive">
+            <h3>Nishchay Multani</h3>
+            <p>Junior Director of Conference Committee</p>
+          </div>
+          <div class="col-md-3 hideme">
+            <img src="images/Malav.jpg" alt="Malav" class=" grow img-responsive">
+            <h3>Malav Patel</h3>
+            <p>Junior Minister of Leadership Development</p>
+          </div>
+          <div class="col-md-3 hideme">
+            <img src="images/Punya.jpg" alt="Punya" class=" grow img-responsive">
+            <h3>Punya Cheema</h3>
+            <p>Junior Creative and Marketing Director</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <section class="contact bg-primary" id="contact">
+      <div class="container">
+        <h2>We
+          <i class="fa fa-heart"></i>
+          Aliens!</h2>
+          <a href="mailto:leap.hbibc@gmail.com">Email Us <i class="fa fa-comments"></i></a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2017 LEAP </p>
+      </div>
+    </footer>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/new-age.js"></script>
+
+  </body>
+
+</html>
